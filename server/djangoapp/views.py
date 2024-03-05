@@ -87,7 +87,6 @@ def get_dealerships(request, state="All"):
     dealerships = get_request(endpoint)
     return JsonResponse({"status": 200, "dealers": dealerships})
 
-
 def get_dealer_reviews(request, dealer_id):
     # if dealer id has been provided
     if (dealer_id):
